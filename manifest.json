@@ -2,7 +2,7 @@
 	"name": "Routines Extension",
 	"version": "0.1",
 	"description": "An extension for triggering Enroll Now button on Udemy site!",
-	"permissions": ["storage", "declarativeContent"],
+	"permissions": ["activeTab", "storage", "declarativeContent"],
 	"background": {
 		"scripts": ["background.js"],
 		"persistent": false
