@@ -7,6 +7,14 @@
 		"scripts": ["background.js"],
 		"persistent": false
 	},
+
+	"content_scripts":[
+		{
+			"matches":["https://www.udemy.com/*"],
+			"js":["contentScript.js"]
+		}
+	],
+
 	"options_page": "options.html",
 	"page_action": {
 		"default_popup": "popup.html",
