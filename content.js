@@ -30,8 +30,20 @@ ready(function(){
    }
    //Enroll
   else if(!window.location.pathname.includes('/cart/checkout')){
+
       if (document.querySelector('a.course-cta')) {
           document.querySelector('a.course-cta').click();
+      }
+      else if(document.querySelector('a.fasc-button')){
+
+          var btn = document.querySelector('a.fasc-button');
+          var btn_href = btn.href;
+          if(btn_href.includes("udemy")){
+            console.log("match");
+            document.querySelector('a.fasc-button').click();
+          }else{
+            console.log("not match");
+          } 
       }
   }
   //Still need to check few more cases.

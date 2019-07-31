@@ -9,8 +9,7 @@
 	},
 	"content_scripts": [
    {
-     "matches": ["https://www.udemy.com/*"],
-     // "exclude_matches": [ "*://*/", "*://*/courses/*", "*://*/*/learn/*", "*://*/home/*", "*://*/cart/", "*://*/user/*", "*://*/teaching/*"],
+     "matches": ["https://www.udemy.com/*", "https://smartybro.com/*"],
      "run_at":"document_end",
      "js": ["content.js"]
    }
