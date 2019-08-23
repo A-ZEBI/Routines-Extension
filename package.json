@@ -1,0 +1,32 @@
+{
+    "name": "routines-extension",
+    "version": "0.0.1",
+    "description": "",
+    "main": "background.js",
+    "scripts": {
+        "start": "node server.js",
+        "watch": "webpack --env.mode=development --progress",
+        "build": "webpack --env.mode=production --progress",
+        "patch": "npm version patch --force",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/A-ZEBI/Routines-Extension.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/A-ZEBI/Routines-Extension/issues"
+    },
+    "homepage": "https://github.com/A-ZEBI/Routines-Extension#readme",
+    "dependencies": {
+        "babel": "^6.23.0",
+        "babel-cli": "^6.26.0",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "webpack": "^4.39.2",
+        "webpack-cli": "^3.3.6",
+        "webpack-dev-server": "^3.7.2"
+    }
+}
