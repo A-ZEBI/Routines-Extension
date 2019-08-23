@@ -1,0 +1,13 @@
+{
+    "permissions": ["activeTab", "storage", "declarativeContent"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [{
+        "matches": ["https://www.udemy.com/*", "https://smartybro.com/*"],
+        "run_at": "document_idle",
+        "js": ["content.js"]
+    }],
+    "manifest_version": 2
+}
